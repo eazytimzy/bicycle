@@ -4,6 +4,10 @@
     margin: 0;
     list-style-type: none;
     text-decoration: none;
+    font-family: 'poppins';
+}
+html, body{
+    overflow-x: hidden;
 }
 nav{
     width: 100%;
@@ -13,7 +17,7 @@ nav{
 .logo a{
     line-height: 40px;
     font-size: 30px;
-    font-family: 'lobster';
+    font-family: 'lobster'!important;
     margin-left: 30px;
     color: black;
     text-decoration: none;
@@ -95,6 +99,180 @@ ul li{
   #hambuger{
       display: none;
   }
+  .container-one{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      width: 100%;
+      margin-left: 30px;
+      
+      
+  }
+  .sub-cont-one{
+      margin-top: 12vh;
+    flex-grow: 1;
+    flex-basis: 50%;
+    letter-spacing: 2px;
+  }
+  .sub-cont-two{
+    flex-grow: 1;
+    flex-basis: 50%;
+    margin-right: 100px ;
+    
+  }
+  .img-one{
+      width: 100%;
+      padding: 0px 50px;
+  }
+  .text-one{
+      font-size: 24px;
+      color: #999999;
+      width: 400px;
+  }
+  .search-input{
+      position: absolute;
+    width: 40vw;
+    height: 58px;
+    font-size: 14px;
+    color: #999999;
+    border: 1px solid #999999;
+    padding: 10px;
+    box-shadow:3px 2px 3px rgb(167, 160, 160);
+    outline: #999999;
+    
+   
+  }
+  .search-btn{
+    position: absolute;
+    left: 30vw;
+    width: 9vw;
+    height: 45px;
+    color: white;
+    background-color: black;
+    border: none;
+    margin-top: 5px;
+  }
+  .search-area{
+      width: 100%;
+  }
+  .container-two{
+      margin-left: 30px;
+  }
+  .heading-two{
+      font-size: 48px;
+      color: #777777;
+      /* font-weight: 300; */
+  }
+  .new{
+      color: white;
+      background-color:black;
+      border-radius: 30px;
+      border: none;
+      padding: 5px 10px;
+      /* width: 50px; */
+  }
+  .preloved{
+    color: black;
+    background-color: #DDDDDD;
+    border-radius: 30px;
+    border: none;
+   margin-left: 10px;
+    padding: 5px 10px;
+}
+.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.product-img{
+    width: 100%;
+}
+.product-one, .product-two, .product-three, .product-four, .product-five, .product-six, .product-seven, .product-eight{
+    flex-basis: 20%;
+    flex-grow: 1;
+    border-radius: 5px;
+    border: 1px solid #DDDDDD;
+    margin: 10px;
+}
+.product-desc{
+    /* margin: 5px 15px; */
+}
+.product-name{
+    margin: 3px 33px;
+}
+.sub-produt-desc{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+} 
+.product-price{
+    font-size: 18px;
+    /* line-height: 40px; */
+}
+.cart-btn{
+    font-size: 12px;
+    border-radius: 30px;
+   padding:5px 10px;
+   height: 30px;
+   line-height: 10px;
+   border-style: none;
+}
+.container-three{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+    margin-left: 30px;
+    justify-content: space-around;
+}
+.img-two{
+    width: 40vw;
+}
+.sect-one{
+flex-grow: 1;
+flex-basis: 50%;
+}
+.sect-two{
+    flex-grow: 1;
+    flex-basis: 50%;
+
+}
+.sect-two > li{
+    line-height: 40px;
+}
+.container-four{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    margin: 10px 30vw;
+    border-radius: 2px;
+    border: 0.1px solid #999999;
+    border-style: none;
+    box-shadow:1px 1px 5px 0px;
+}
+.testimonial-head{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    /* margin: 10px 30vw; */
+  
+}
+
+.testimonial-img{
+    flex-basis: 50%;
+    flex-grow: 1;
+    width: 100%;
+    padding: 1vw;
+}
+.testimonial-text{
+    flex-basis: 50%;
+    flex-grow: 1;
+    padding: 10vw 1vw;
+    line-height: 4vh;
+}
+footer{
+    background-color: aqua;
+}
 @media (max-width: 1194px){
    .login-btn{
        margin-left: 15px;
@@ -109,8 +287,9 @@ ul li{
         width: 100%;
         justify-content: center;
         align-items: center;
-        margin-left:25vw;
+        margin-left:5vw;
         margin-top: 3vh;
+        text-align: center;
     }
   
     ul li{
@@ -119,7 +298,7 @@ ul li{
         width: 50%;
         justify-content: center;
         align-items: center;
-        margin-left: -150vw;
+        margin-left: -170vw;
         transition: ease-in 1s;
     
     }
@@ -127,10 +306,10 @@ ul li{
         margin-left: 0px;
     }
     .cart{
-        margin-right: -50px;
+        margin-right:0px;
     }
     .badge{
-        right:28vw;
+        right:20vw;
         top: 1vh;
     }
     .hambuger{
